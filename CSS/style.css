@@ -1,0 +1,111 @@
+.logo {
+    height: 75px;
+    width: 75px;
+    background-color: darkgrey;
+    border-radius: 50%;
+    background-image: url(https://files.imagetourl.net/uploads/1769770249069-2aa6e257-fb81-4960-bc6a-168467aaeae5.jpeg);
+    background-size: cover;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header {
+    background-color: black;
+}
+
+.nav {
+    font-size: 15px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.nav :hover,
+.nav .active {
+    color: #00b7ff;
+}
+
+/*---Desain Responsif--- */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 300px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .menu {
+        display: flex;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.body {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.5vw;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* BODYY */
+body {
+  background: linear-gradient(
+    180deg,
+    #0f172a,
+    #020617
+  );
+  color: #e5e7eb;
+}
+
+#message-us-page {
+  background: #f9fafb;
+  color: #020617;
+  border-radius: 15px;
+  padding: 35px;
+}
+
+
+

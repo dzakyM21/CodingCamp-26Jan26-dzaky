@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Dzaky</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>                                                  
+
+</head>
+
+<body>
+    <header class="main-header p-[8px]">
+        <!-- Logo -->
+        <div class="logo"></div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
+            <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
+            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
+            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+        </section>
+
+        <hr />
+
+        <!-- Our Profile Page -->
+        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">About Dzaky Company</h2>
+            <p class="mt-2">Dzaky Company is dedicated to providing top-notch services in various domains.</p>
+        </section>
+
+        <hr />
+
+        <!-- Portfolio Page -->
+        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">Our Portfolio</h2>
+            <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and expertise.</p>
+        </section>
+
+        <hr />
+
+        <!-- Message Us Page -->
+        <section id="message-us-page" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Us</h2>
+                <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you
+                    promptly.</p>
+            </header>
+
+            <form onsubmit="submitMessage(event)">
+                <div class="mb-4">
+                    <label class="block mb-2" for="name">Name:</label>
+                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
+                    <p id="error-name" class="text-red-500 text-sm mt-1 hidden"></p>
+                </div>
+                <div class="mb-4">
+           <label class="block mb-2">Gender:</label>
+           <div class="flex gap-4">
+                <label class="flex items-center gap-1">
+                <input type="radio" name="gender" value="Laki-laki">
+                     Laki-laki
+           </label>
+                <label class="flex items-center gap-1">
+                 <input type="radio" name="gender" value="Perempuan">
+                    Perempuan
+           </label>
+               </div>
+                 <p id="error-gender" class="text-red-500 text-sm mt-1 hidden"></p>
+           </div>
+                <div class="mb-4">
+           <label class="block mb-2" for="birthdate">Tanggal Lahir:</label>
+                 <input type="date" id="birthdate" class="w-full p-2 border rounded">
+                 <p id="error-birthdate" class="text-red-500 text-sm mt-1 hidden"></p>
+            </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="email">Email:</label>
+                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
+                    <p id="error-email" class="text-red-500 text-sm mt-1 hidden"></p>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="message">Message:</label>
+                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5"
+                        required></textarea>
+                        <p id="error-message" class="text-red-500 text-sm mt-1 hidden"></p>
+                </div>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="submit">
+                    Send Message
+                </button>
+                <div id="hasil" class="mt-20 p-20 border rounded"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-center p-4">
+            &copy; 2026 Dzaky Musyaffa Company. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
